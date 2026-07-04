@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit the Sunrise Academy admission form for new student registration and admissions inquiries.">
+    <title>Admission | Sunrise Academy</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a class="brand" href="index.html">
+                    <span class="brand__mark"></span>
+                    <span class="brand__title">
+                        <h1>Sunrise Academy</h1>
+                        <p>Admission Form</p>
+                    </span>
+                </a>
+                <div class="nav__links">
+                    <a href="index.html">Home</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="admission.html">Admission</a>
+                    <a href="about.html">About</a>
+                    <a href="help.html">Help</a>
+                </div>
+                <a class="cta-nav" href="admission.html">Apply Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-block">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Student Admission Form</h2>
+                </header>
+                <p class="section-copy">Complete the form to begin your application to Sunrise Academy. All fields marked with an asterisk are required.</p>
+                <form class="card form-grid" action="#" method="post" novalidate>
+                    <div class="form-grid form-grid--columns">
+                        <div class="form-group">
+                            <label for="student-name">Student Name *</label>
+                            <input type="text" id="student-name" name="student-name" placeholder="Full student name" required minlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="guardian-name">Parent/Guardian Name *</label>
+                            <input type="text" id="guardian-name" name="guardian-name" placeholder="Parent or guardian name" required minlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="example@sunriseacademy.edu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Create Password *</label>
+                            <input type="password" id="password" name="password" placeholder="Minimum 8 characters" required minlength="8" pattern="(?=.{8,}).*">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 234 567 890" required pattern="\+?[0-9\s-]{7,}" aria-describedby="phone-help">
+                            <small id="phone-help">Include country code if available.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                    </div>
+                    <fieldset class="fieldset-group">
+                        <legend>Gender *</legend>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="female" required> Female</label>
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="nonbinary"> Non-binary</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="grade">Grade/Class *</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select grade</option>
+                            <option>Kindergarten</option>
+                            <option>Grade 1</option>
+                            <option>Grade 2</option>
+                            <option>Grade 3</option>
+                            <option>Grade 4</option>
+                            <option>Grade 5</option>
+                            <option>Grade 6</option>
+                            <option>Grade 7</option>
+                            <option>Grade 8</option>
+                            <option>Grade 9</option>
+                            <option>Grade 10</option>
+                            <option>Grade 11</option>
+                            <option>Grade 12</option>
+                        </select>
+                    </div>
+                    <fieldset class="fieldset-group">
+                        <legend>Subjects of Interest</legend>
+                        <div class="checkbox-grid">
+                            <label><input type="checkbox" name="subjects" value="science"> Science</label>
+                            <label><input type="checkbox" name="subjects" value="mathematics"> Mathematics</label>
+                            <label><input type="checkbox" name="subjects" value="literature"> Literature</label>
+                            <label><input type="checkbox" name="subjects" value="arts"> Arts</label>
+                            <label><input type="checkbox" name="subjects" value="technology"> Technology</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <textarea id="address" name="address" rows="4" placeholder="Street, city, postal code" required minlength="10"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Submit Application</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>Sunrise Academy</h2>
+                <p>Start your school journey today.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="admission.html">Admission</a>
+                <a href="about.html">About</a>
+                <a href="help.html">Help</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:admissions@sunriseacademy.edu">admissions@sunriseacademy.edu</a>
+                <a href="tel:+252613391690">252 613 39 16 90</a>
+                <span>25 Beacon Street, Cityville</span>
+            </div>
+        </div>
+        <div class="container footer-copy">&copy; 2026 Sunrise Academy. All rights reserved.</div>
+    </footer>
+    <a class="fixed-action" href="admission.html">Apply Now</a>
+</body>
+</html>

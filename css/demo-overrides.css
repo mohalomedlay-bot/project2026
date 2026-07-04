@@ -1,0 +1,42 @@
+/* Demo overrides and control panel styles */
+.demo-panel {
+  position: fixed;
+  right: 1rem;
+  top: 1.25rem;
+  width: 220px;
+  background: #fff;
+  border-radius: 0.85rem;
+  padding: 1rem;
+  box-shadow: 0 12px 40px rgba(17,34,64,0.12);
+  z-index: 1300;
+  font-size: 0.95rem;
+}
+.demo-panel h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+.demo-panel label {
+  display: block;
+  margin: 0.5rem 0 0.25rem 0;
+}
+.demo-panel input[type=color],
+.demo-panel select,
+.demo-panel input[type=range] {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.demo-panel button {
+  margin-top: 0.65rem;
+  padding: 0.5rem 0.65rem;
+  background: var(--primary-color);
+  color: #fff;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.demo-panel .muted { color: var(--muted-color); font-size: 0.9rem; }
+.demo-panel .hint { font-size: 0.8rem; color: var(--muted-color); margin-top: 0.5rem; }
+
+/* Small adjustments to ensure demo layout doesn't collide with panel */
+body { padding-right: 260px; }
+@media (max-width: 800px) { .demo-panel { position: static; width: auto; margin: 0.75rem; } body { padding-right: 0; } }
